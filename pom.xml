@@ -135,12 +135,6 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>nl.rutgerkok</groupId>
-            <artifactId>blocklocker</artifactId>
-            <version>1.7</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
             <groupId>com.github.angeschossen</groupId>
             <artifactId>LandsAPI</artifactId>
             <version>4.9.4</version>
