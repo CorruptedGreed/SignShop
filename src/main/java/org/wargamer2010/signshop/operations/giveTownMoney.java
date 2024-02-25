@@ -3,7 +3,6 @@ package org.wargamer2010.signshop.operations;
 import com.palmergames.bukkit.towny.TownyMessaging;
 import com.palmergames.bukkit.towny.TownySettings;
 import com.palmergames.bukkit.towny.TownyUniverse;
-import com.palmergames.bukkit.towny.exceptions.EconomyException;
 import com.palmergames.bukkit.towny.exceptions.TownyException;
 import com.palmergames.bukkit.towny.object.Resident;
 import com.palmergames.bukkit.towny.object.Town;
@@ -85,7 +84,7 @@ public class giveTownMoney implements SignShopOperation {
                 }
 
                 return true;
-            } catch (TownyException | EconomyException x) {
+            } catch (TownyException x) {
                 TownyMessaging.sendErrorMsg(ssPlayer.getPlayer(), x.getMessage());
             }
         return false;
