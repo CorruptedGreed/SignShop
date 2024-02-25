@@ -99,12 +99,6 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.bekvon.bukkit</groupId>
-            <artifactId>residence</artifactId>
-            <version>4.8.8.2</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
             <groupId>com.earth2me</groupId>
             <artifactId>essentials</artifactId>
             <version>2.17.1.0</version>
@@ -126,12 +120,6 @@
             <groupId>com.Zrips</groupId>
             <artifactId>CMI-API</artifactId>
             <version>9.0.0.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.griefcraft.lwc</groupId>
-            <artifactId>LWCX</artifactId>
-            <version>2.2.5</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
