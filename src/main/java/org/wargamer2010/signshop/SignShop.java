@@ -36,6 +36,9 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.logging.*;
+import java.util.concurrent.ExecutorService; //Folia
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 public class SignShop extends JavaPlugin {
     private static final int CONFIG_VERSION_DO_NOT_TOUCH = 4;
@@ -57,6 +60,9 @@ public class SignShop extends JavaPlugin {
     private final SignShopLoginListener loginListener = new SignShopLoginListener();
     private final int B_STATS_ID = 6574;
 
+    // Folia
+    private static final ExecutorService executorService = Executors.newCachedThreadPool();
+    
     // Vault
     private Vault vault = null;
 
@@ -266,6 +272,9 @@ public class SignShop extends JavaPlugin {
 
     @Override
     public void onDisable() {
+        try { //Folia
+            executorService.awaitTermination(15, TimeUnit.SECONDS);
+        } catch (InterruptedException ignored) {}
         closeHandlers();
         if (store != null)
             store.Save();
@@ -371,5 +380,8 @@ public class SignShop extends JavaPlugin {
         public String getTail(Handler h) {
             return super.getTail(h);
         }
+    }
+        public static void runInAsyncThread(Runnable runnable) { // Folia
+        executorService.submit(runnable);
     }
 }
