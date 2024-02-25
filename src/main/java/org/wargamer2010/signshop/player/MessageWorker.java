@@ -28,7 +28,7 @@ public class MessageWorker implements Runnable {
                 return;
             if (instance == null)
                 instance = new MessageWorker();
-            Bukkit.getScheduler().runTaskAsynchronously(SignShop.getInstance(), instance);
+            SignShop.runInAsyncThread(instance); //Folia
             bWorking = true;
         }
     }
