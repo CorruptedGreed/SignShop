@@ -14,6 +14,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <repositories>
+         <repository>
+               <id>glaremasters repo</id>
+               <url>https://repo.glaremasters.me/repository/towny/</url>
+         </repository>
         <repository>
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
@@ -81,10 +85,10 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.palmergames.bukkit</groupId>
-            <artifactId>towny</artifactId>
-            <version>0.95.1.0-1.13.2</version>
-            <scope>provided</scope>
+             <groupId>com.palmergames.bukkit.towny</groupId>
+             <artifactId>towny</artifactId>
+             <version>0.100.1.0</version>
+             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>world.bentobox</groupId>
