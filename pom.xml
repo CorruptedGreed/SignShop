@@ -19,10 +19,6 @@
              <url>https://repo.essentialsx.net/releases/</url>
          </repository>
          <repository>
-             <id>paper-repo</id>
-             <url>https://papermc.io/repo/repository/maven-public/</url>
-         </repository>
-         <repository>
              <id>glaremasters repo</id>
              <url>https://repo.glaremasters.me/repository/towny/</url>
          </repository>
@@ -49,10 +45,6 @@
         <repository>
             <id>sk89q-repo</id>
             <url>https://maven.enginehub.org/repo/</url>
-        </repository>
-        <repository>
-            <id>essentials-releases</id>
-            <url>https://repo.essentialsx.net/releases/</url>
         </repository>
     </repositories>
     <dependencies>
