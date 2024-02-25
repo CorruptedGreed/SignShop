@@ -48,12 +48,6 @@
         </repository>
     </repositories>
     <dependencies>
-        <dependency>
-	   <groupId>CMI-API</groupId>
-	   <artifactId>CMI-API</artifactId>
-	   <version>9.6.4.1</version>
-            <scope>provided</scope>
-        </dependency>
          <dependency>
             <groupId>net.essentialsx</groupId>
             <artifactId>EssentialsX</artifactId>
