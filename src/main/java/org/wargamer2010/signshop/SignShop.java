@@ -27,7 +27,6 @@ import org.wargamer2010.signshop.timing.TimeManager;
 import org.wargamer2010.signshop.util.DataConverter;
 import org.wargamer2010.signshop.util.SSTimeUtil;
 import org.wargamer2010.signshop.util.commandUtil;
-import org.wargamer2010.signshop.worth.CMIWorthHandler;
 import org.wargamer2010.signshop.worth.EssentialsWorthHandler;
 import org.wargamer2010.signshop.worth.WorthHandler;
 
@@ -221,11 +220,7 @@ public class SignShop extends JavaPlugin {
         }
         //Setup worth
         if (getSignShopConfig().getEnablePriceFromWorth()) {
-            if (Bukkit.getServer().getPluginManager().getPlugin("CMI") != null && Bukkit.getServer().getPluginManager().getPlugin("CMI").isEnabled()) {
-                worthHandler = new CMIWorthHandler();
-                log("Using worth information from CMI.", Level.INFO);
-            }
-            else if (Bukkit.getServer().getPluginManager().getPlugin("Essentials") != null && Bukkit.getServer().getPluginManager().getPlugin("Essentials").isEnabled()) {
+            if (Bukkit.getServer().getPluginManager().getPlugin("Essentials") != null && Bukkit.getServer().getPluginManager().getPlugin("Essentials").isEnabled()) {
                 worthHandler = new EssentialsWorthHandler();
                 log("Using worth information from Essentials.", Level.INFO);
             }
