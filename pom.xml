@@ -15,8 +15,16 @@
     </properties>
     <repositories>
          <repository>
-               <id>glaremasters repo</id>
-               <url>https://repo.glaremasters.me/repository/towny/</url>
+             <id>essentials-releases</id>
+             <url>https://repo.essentialsx.net/releases/</url>
+         </repository>
+         <repository>
+             <id>paper-repo</id>
+             <url>https://papermc.io/repo/repository/maven-public/</url>
+         </repository>
+         <repository>
+             <id>glaremasters repo</id>
+             <url>https://repo.glaremasters.me/repository/towny/</url>
          </repository>
         <repository>
             <id>spigot-repo</id>
@@ -48,6 +56,12 @@
         </repository>
     </repositories>
     <dependencies>
+         <dependency>
+            <groupId>net.essentialsx</groupId>
+            <artifactId>EssentialsX</artifactId>
+            <version>2.19.0</version>
+            <scope>provided</scope>
+         </dependency>
          <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
